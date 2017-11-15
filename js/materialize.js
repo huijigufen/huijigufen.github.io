@@ -9422,9 +9422,10 @@ if (Vel) {
         }
 
         function xpos(e) {
+          var targetTouches = e.originalEvent.targetTouches;
           // touch event
-          if (e.targetTouches && e.targetTouches.length >= 1) {
-            return e.targetTouches[0].clientX;
+          if (targetTouches && targetTouches.length >= 1) {
+            return targetTouches[0].clientX;
           }
 
           // mouse event
@@ -9432,9 +9433,10 @@ if (Vel) {
         }
 
         function ypos(e) {
+          var targetTouches = e.originalEvent.targetTouches;
           // touch event
-          if (e.targetTouches && e.targetTouches.length >= 1) {
-            return e.targetTouches[0].clientY;
+          if (targetTouches && targetTouches.length >= 1) {
+            return targetTouches[0].clientY;
           }
 
           // mouse event
