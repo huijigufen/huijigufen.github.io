@@ -14,6 +14,10 @@
 }
 
 nav ul li {
-    min-width: 50px;
-    width:25%;
+    min-width: 30px;
+    width:14%;
+}
+
+nav ul.dropdown-content li a {
+    font-size: 12px;
 }
