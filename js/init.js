@@ -1,12 +1,11 @@
 (function ($) {
   $(function () {
 
-    $('#top').html(`<img src="img/logo_icon.png"
-     style="margin-left: 50px" width="85px"/>
-<img src="img/logo_text.png" style="margin-left: 10px" height="60px">
+    $('#top').html(`<img id="logo" src="img/logo_icon.png"/>
+<img id="logo_text" src="img/logo_text.png">
 
 
-<nav style="background-color: #840f31">
+<nav class="purple_color">
   <div class="container center">
     <div>
       <ul class="">
@@ -36,7 +35,7 @@
   </div>
 </nav>`);
 
-    $('#bottom').html(`<footer class="page-footer" style="background-color: #840f31">
+    $('#bottom').html(`<footer class="page-footer purple_color">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">

@@ -21,3 +21,16 @@ nav ul li {
 nav ul.dropdown-content li a {
     font-size: 12px;
 }
+
+#logo {
+    margin-left: 50px;
+    width: 85px
+}
+#logo_text {
+    margin-left: 10px;
+    height : 60px
+}
+
+.purple_color {
+    background-color: #840f31
+}
