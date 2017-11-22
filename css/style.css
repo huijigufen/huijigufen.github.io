@@ -13,7 +13,7 @@
 	font-size: inherit;
 }
 
-nav ul li {
+.menu-item {
     min-width: 30px;
     width:14%;
 }
@@ -33,4 +33,16 @@ nav ul.dropdown-content li a {
 
 .purple_color {
     background-color: #840f31
+}
+
+nav a.button-collapse {
+    display: flex;
+    justify-content:center;
+    align-items:center
+}
+
+@media only screen and (min-width: 993px) {
+    nav a.button-collapse {
+        display: none;
+    }
 }
