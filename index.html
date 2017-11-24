@@ -20,6 +20,12 @@
       -webkit-margin-end: 0px;
       -webkit-padding-start: 40px;
     }
+    .carousel-item {
+      background-size: auto 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 800px;
+    }
   </style>
   <link rel="shortcut  icon" type="image/x-icon" href="img/logo_icon.png" media="screen"/>
 </head>
@@ -27,27 +33,44 @@
 <div>
   <div id="top"></div>
 
-  <div id="home_carousel" class="carousel carousel-slider center" style="display:block">
-    <!--<div class="carousel-fixed-item center">-->
-      <!--<a class="btn-large waves-effect white-text" style="background-color: #840f31"-->
-         <!--href="http://www.datonggroup.com.cn/">大通集团</a>-->
-    <!--</div>-->
-    <div class="carousel-item red white-text" href="#one!">
-      <h2>First Panel</h2>
-      <p class="white-text">This is your first panel</p>
-    </div>
-    <div class="carousel-item amber white-text" href="#two!">
-      <h2>Second Panel</h2>
-      <p class="white-text">This is your second panel</p>
-    </div>
-    <div class="carousel-item green white-text" href="#three!">
-      <h2>Third Panel</h2>
-      <p class="white-text">This is your third panel</p>
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Fourth Panel</h2>
-      <p class="white-text">This is your fourth panel</p>
-    </div>
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/index1.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/index2.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/index3.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/index4.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/index5.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
   </div>
 
 <div id="bottom"></div>
