@@ -46,3 +46,15 @@ nav a.button-collapse {
         display: none;
     }
 }
+
+#button_left, #button_right {
+    position: absolute;
+    top:50%;
+    margin-top: -35px;
+    z-index: 9999;
+}
+
+#button_right {
+    left:100%;
+    margin-left: -30px;
+}
