@@ -43,6 +43,12 @@ nav a.button-collapse {
     top:50%;
     margin-top: -35px;
     z-index: 9999;
+    opacity: 0.8;
+    cursor:pointer;
+}
+
+#button_left:hover, #button_right:hover {
+    opacity: 1.0;
 }
 
 #button_right {
