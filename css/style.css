@@ -97,3 +97,12 @@ ul.slides li h3 {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.tabs .tab a {
+    font-size: 22px;
+    color:rgba(132, 15, 49, 0.7)
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    color: #840f31
+}
