@@ -86,11 +86,15 @@ function analyseFile(file) {
       let chineseSet = new Set();
       for (let i = 0; i < data.length; i++) {
         let char = data.charAt(i);
+        if (char == '贤') {
+          console.log('Got a 贤')
+        }
         if (char >= '\u4E00' && char <= '\u9FFF') {
+          console.log('Add a 贤')
           chineseSet.add(char);
         }
       }
-      console.log(set2String(chineseSet));
+      fs.writeFile('result.txt', set2String(chineseSet))
     })
   }
 }
