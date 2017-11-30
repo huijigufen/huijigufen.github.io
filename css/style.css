@@ -65,15 +65,6 @@ nav a.button-collapse {
     url('/fonts/siyuanhei/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
 }
 
-@font-face {
-    font-family: 'webfont2';
-    src: url('/fonts/siyuanhei2/webfont.eot'); /* IE9*/
-    src: url('/fonts/siyuanhei2/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('/fonts/siyuanhei2/webfont.woff') format('woff'), /* chrome、firefox */
-    url('/fonts/siyuanhei2/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('/fonts/siyuanhei2/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
-}
-
 body {
     font-family:"webfont" !important;
     font-style:normal;
@@ -89,10 +80,22 @@ ul.slides li h3 {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.slider .slides li .caption p {
+ul.slides li h5 {
+    background-color: rgba(132, 15, 49, 0.6);
+    border-radius: 20px;
+    padding: 30px;
+    line-height: 40px;
+}
+
+ul.slides li h5.no-vertical-padding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 30px;
+}
+
+.slider .slides li .caption p, ul.slides li h5 {
     color:#fff;
-    -webkit-text-stroke: 0.3px #840f31;
-    font-family:"webfont2" !important;
+    font-family:"webfont" !important;
     font-style:normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

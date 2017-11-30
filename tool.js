@@ -52,10 +52,55 @@ let text = `<img id="logo" src="img/logo_icon.png">
   </div>
 </nav>`
 
-let array = text.split('\n')
+// let array = text.split('\n')
+//
+// for (let i = 0; i < array.length; i++) {
+//   let line = array[i]
+//   line = line.replace(/'/g, '"')
+//   console.log(`+ '${line}'`)
+// }
 
-for (let i = 0; i < array.length; i++) {
-  let line = array[i]
-  line = line.replace(/'/g, '"')
-  console.log(`+ '${line}'`)
+let fs = require('fs');
+let argv = process.argv;
+if (argv.length > 2) {
+  let path = argv[2];
+  fs.readdir(path, function (err, files) {
+    if (err) {
+      return
+    }
+    files.forEach(function (file) {
+      let filePath = path + '/' + file
+      let stat = fs.lstatSync(filePath);
+      if (stat.isFile()) {
+        analyseFile(filePath)
+      }
+    })
+  })
+
 }
+
+function analyseFile(file) {
+  if (fs.existsSync(file)) {
+    console.log("开始解析文件" + file);
+    fs.readFile(file, 'utf-8', function (err, data) {
+      let chineseSet = new Set();
+      for (let i = 0; i < data.length; i++) {
+        let char = data.charAt(i);
+        if (char >= '\u4E00' && char <= '\u9FFF') {
+          chineseSet.add(char);
+        }
+      }
+      console.log(set2String(chineseSet));
+    })
+  }
+}
+
+function set2String(set) {
+  let result = ''
+  set.forEach(item => {
+    result += item
+  })
+  return result
+}
+
+analyseFile('part1.txt')
